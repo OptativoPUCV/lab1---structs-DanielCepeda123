@@ -37,3 +37,20 @@ exercises.c:33:10: error: expected expression before ‘int’
       |          ^~~
 Compilation failed
 8c96c56
+Fri 17 Mar 2023 06:19:55 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:33:10: error: expected expression before ‘int’
+   33 |   *max = int* next(Lista*);
+      |          ^~~
+exercises.c:34:10: error: expected expression before ‘int’
+   34 |   *min = int* first(Lista*);
+      |          ^~~
+exercises.c: In function ‘asignarValor’:
+exercises.c:92:11: error: expected identifier or ‘(’ before ‘[’ token
+   92 |     Vector[i] = valor;
+      |           ^
+Compilation failed
+5f37676
