@@ -55,9 +55,9 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona * p = (Persona *) malloc(sizeof(Persona));
    //asignar valores de entrada a los campos de p
 
-  strcpy(p->nombre, nombre);
-  strcpy(p->rut, rut);
-  strcpy(p->edad, edad);
+  strcpy(nombre, p->nombre);
+  strcpy(rut, p->rut);
+  strcpy(edad, p->edad);
   
    return p;
 }
