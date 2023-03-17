@@ -30,8 +30,6 @@ almacena en las variables apuntadas por max y min.
 void arrayMaxMin(int *a, int n, int *max, int *min) {
 
   
-  *max = int* next(Lista*);
-  *min = int* first(Lista*);
   
     
 }
