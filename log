@@ -54,3 +54,20 @@ exercises.c:92:11: error: expected identifier or ‘(’ before ‘[’ token
       |           ^
 Compilation failed
 5f37676
+Fri 17 Mar 2023 06:21:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:33:10: error: expected expression before ‘int’
+   33 |   *max = int* next(Lista*);
+      |          ^~~
+exercises.c:34:10: error: expected expression before ‘int’
+   34 |   *min = int* first(Lista*);
+      |          ^~~
+exercises.c: In function ‘asignarValor’:
+exercises.c:92:12: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   92 |     v[i] = valor;
+      |            ^~~~~
+Compilation failed
+50d005c
