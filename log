@@ -196,3 +196,36 @@ exercises.c:94:12: error: incompatible types when assigning to type ‘Vector’
 cc1: all warnings being treated as errors
 Compilation failed
 7b4683a
+Fri 17 Mar 2023 06:42:30 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:33:10: error: expected expression before ‘int’
+   33 |   *max = int* next(Lista*);
+      |          ^~~
+exercises.c:34:10: error: expected expression before ‘int’
+   34 |   *min = int* first(Lista*);
+      |          ^~~
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:13: error: assignment to expression with array type
+   58 |   p->nombre = nombre;
+      |             ^
+exercises.c:59:10: error: assignment to expression with array type
+   59 |   p->rut = rut;
+      |          ^
+exercises.c: In function ‘crearVector’:
+exercises.c:80:49: error: expected ‘)’ before ‘n’
+   80 |   Vector * v = (Vector *) malloc(sizeof(Vector * n));
+      |                                        ~        ^~
+      |                                                 )
+exercises.c:80:12: error: unused variable ‘v’ [-Werror=unused-variable]
+   80 |   Vector * v = (Vector *) malloc(sizeof(Vector * n));
+      |            ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:12: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   94 |     v[i] = valor;
+      |            ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0b5eb19
