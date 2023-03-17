@@ -400,3 +400,18 @@ exercises.c:91:12: error: incompatible types when assigning to type ‘Vector’
 cc1: all warnings being treated as errors
 Compilation failed
 2386a17
+Fri 17 Mar 2023 06:52:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:77:49: error: expected ‘)’ before ‘n’
+   77 |   Vector * v = (Vector *) malloc(sizeof(Vector * n));
+      |                                        ~        ^~
+      |                                                 )
+exercises.c:77:12: error: unused variable ‘v’ [-Werror=unused-variable]
+   77 |   Vector * v = (Vector *) malloc(sizeof(Vector * n));
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+af7d15e
