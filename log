@@ -415,3 +415,17 @@ exercises.c:77:12: error: unused variable ‘v’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 af7d15e
+Fri 17 Mar 2023 06:54:55 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:78:25: error: too few arguments to function ‘calloc’
+   78 |   v->datos = (Vector *) calloc(sizeof(Vector));
+      |                         ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:543:14: note: declared here
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+Compilation failed
+20bc0e9
