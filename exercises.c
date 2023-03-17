@@ -15,9 +15,9 @@ intercambia los valores de las variables apuntadas por a y b.
 void swap(int *a, int *b) {
   
   int aux;
-  aux = *a;
-  *a = *b;
-  *b = aux;
+  aux = a;
+  a = b;
+  b = aux;
   
 }
 
@@ -52,7 +52,10 @@ typedef struct {
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona * p = (Persona *) malloc(sizeof(Persona));
    //asignar valores de entrada a los campos de p
-
+  
+  
+  
+  
 
    return p;
 }
