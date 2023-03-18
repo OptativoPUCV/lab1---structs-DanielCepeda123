@@ -12,7 +12,8 @@ Ejercicio 1.
 Programe la función void swap(int *a, int *b), la cual
 intercambia los valores de las variables apuntadas por a y b.
 */
-void swap(int *a, int *b) {
+void swap(int *a, int *b) 
+{
   
   int aux;
   aux = *a;
@@ -62,7 +63,8 @@ crearPersona(...), la cual crea una nueva persona con
 los datos ingresados como parámetros y retorna un puntero 
 al dato recién creado.
 */
-typedef struct {
+typedef struct 
+{
   char nombre[30];
   char rut[11];
   int edad;
@@ -89,12 +91,14 @@ un vector con capacidad `n`, reserva la memoria
 correspondiente para el arreglo con `n` datos 
 inicializados en 0 y luego retorna el vector creado.
 */
-typedef struct {
+typedef struct 
+{
    int *datos; // arreglo dinámico
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
+Vector * crearVector(int n) 
+{
   Vector * v = (Vector *) malloc(sizeof(Vector));
   v->datos = (int *) calloc(n, sizeof(int));
   v->capacidad = n;
@@ -109,7 +113,8 @@ Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 
 la cual asigna el valor a la posición i del vector v.
 */
-void asignarValor(Vector * v, int i, int valor) {
+void asignarValor(Vector * v, int i, int valor) 
+{
 
     v->datos[i] = valor;
 }
@@ -119,8 +124,8 @@ Ejercicio 6.
 Programe la función int obtenerValor(Vector * v, int i), 
 la cual retorna el valor en la posición i del vector v.
 */
-int obtenerValor(Vector * v, int i) {
-  
+int obtenerValor(Vector * v, int i) 
+{
   
    return v->datos[i];
 }
