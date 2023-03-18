@@ -519,3 +519,14 @@ Fri 17 Mar 2023 06:59:51 PM UTC:
  tests:  4|4
 total_score: 30/70
 4c47460
+Sat 18 Mar 2023 12:06:56 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:78:3: error: ‘v’ undeclared (first use in this function)
+   78 |   v->datos = (int *) calloc(n, sizeof(int));
+      |   ^
+exercises.c:78:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+561a7cd
