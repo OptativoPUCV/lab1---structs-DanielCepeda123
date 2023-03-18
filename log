@@ -536,3 +536,16 @@ Sat 18 Mar 2023 12:07:23 AM UTC:
  tests:  4|4
 total_score: 30/70
 8a88d36
+Sat 18 Mar 2023 12:07:54 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:78:9: error: expected identifier or ‘(’ before ‘->’ token
+   78 |   Vector->datos = (int *) calloc(n, sizeof(int));
+      |         ^~
+exercises.c:79:9: error: expected identifier or ‘(’ before ‘->’ token
+   79 |   Vector->capacidad = n;
+      |         ^~
+Compilation failed
+84aea4a
