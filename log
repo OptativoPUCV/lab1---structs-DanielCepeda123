@@ -585,3 +585,14 @@ Sat 18 Mar 2023 12:08:50 AM UTC:
  tests:  4|4
 total_score: 30/70
 f571457
+Sat 18 Mar 2023 10:03:48 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:32:9: error: ‘i’ undeclared (first use in this function)
+   32 |   for ( i = 0 ; i < n ; i++)
+      |         ^
+exercises.c:32:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+13bd3e9
