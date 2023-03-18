@@ -69,7 +69,8 @@ typedef struct {
 } Persona;
 
 
-Persona* crearPersona(char nombre[], char rut[], int edad) {
+Persona* crearPersona(char nombre[], char rut[], int edad) 
+{
    Persona * p = (Persona *) malloc(sizeof(Persona));
    //asignar valores de entrada a los campos de p
 
@@ -100,7 +101,7 @@ Vector * crearVector(int n) {
 
   
   
-   return NULL;
+   return v;
 }
 
 /*
