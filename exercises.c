@@ -137,7 +137,11 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
-  
+
+  for ( i = 0 ; i <= *a->capacidad ; i++)
+    {
+      *c[i] = *a[i] + b[i];
+    }
   
   
 }
