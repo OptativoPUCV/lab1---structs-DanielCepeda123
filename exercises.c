@@ -28,7 +28,8 @@ Programe la función void arrayMaxMin(int *a, int n, int *max, int *min),
 la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
-void arrayMaxMin(int *a, int n, int *max, int *min) {
+void arrayMaxMin(int *a, int n, int *max, int *min) 
+{
 
   int i = 0;
   *max = a[i];
@@ -154,5 +155,6 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
 {
-
+  
+  
 }
