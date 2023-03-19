@@ -673,3 +673,15 @@ exercises.c:140:19: error: invalid type argument of unary ‘*’ (have ‘Vecto
       |                   ^~~~~
 Compilation failed
 5398ee6
+Sun 19 Mar 2023 12:36:30 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:140:15: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  140 |   c[0] = a[0] + b[0];
+      |          ~~~~ ^ ~~~~
+      |           |      |
+      |           Vector Vector
+Compilation failed
+0c01fc1
