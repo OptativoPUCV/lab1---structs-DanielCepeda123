@@ -979,3 +979,9 @@ exercises.c:158:12: error: variable ‘a’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 a8e592f
+Sun 19 Mar 2023 02:39:41 AM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+ tests:  6|2
+total_score: 50/70
+2b208cd
