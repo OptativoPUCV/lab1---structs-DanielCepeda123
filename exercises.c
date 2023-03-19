@@ -155,11 +155,11 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
 {
-  Vector a;
-  Vector b;
+  Vector *a;
+  Vector *b;
 
-  a = crearVector(2);
-  b = crearVector(2);
+  *a = crearVector(2);
+  *b = crearVector(2);
 
     
 }
