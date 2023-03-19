@@ -747,3 +747,14 @@ Sun 19 Mar 2023 01:35:05 AM UTC:
  tests:  5|3
 total_score: 40/70
 22080ed
+Sun 19 Mar 2023 01:42:51 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:140:5: error: ‘i’ undeclared (first use in this function)
+  140 |   c[i] = a[i] + b[i];
+      |     ^
+exercises.c:140:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+e33f336
