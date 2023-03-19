@@ -910,3 +910,13 @@ exercises.c:162:8: error: incompatible types when assigning to type ‘Vector’
       |        ^~~~~~~~~~~
 Compilation failed
 c601c6b
+Sun 19 Mar 2023 02:31:56 AM UTC: 
+ exercises.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:159:8: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+  159 |   *c = crearVector(2);
+      |        ^~~~~~~~~~~
+Compilation failed
+db43a9c
