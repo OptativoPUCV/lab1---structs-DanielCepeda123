@@ -877,3 +877,23 @@ Sun 19 Mar 2023 02:24:08 AM UTC:
  tests:  6|2
 total_score: 50/70
 4c8ca00
+Sun 19 Mar 2023 02:29:34 AM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:161:7: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+  161 |   a = crearVector(2);
+      |       ^~~~~~~~~~~
+exercises.c:162:7: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+  162 |   b = crearVector(2);
+      |       ^~~~~~~~~~~
+exercises.c:159:10: error: variable ‘b’ set but not used [-Werror=unused-but-set-variable]
+  159 |   Vector b;
+      |          ^
+exercises.c:158:10: error: variable ‘a’ set but not used [-Werror=unused-but-set-variable]
+  158 |   Vector a;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+2a8aa87
