@@ -801,3 +801,19 @@ exercises.c:141:9: error: ‘i’ undeclared (first use in this function)
 exercises.c:141:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c7f3dc0
+Sun 19 Mar 2023 01:49:25 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:143:7: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  143 |       *c[i] = *a[i] + *b[i];
+      |       ^~~~~
+exercises.c:143:15: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  143 |       *c[i] = *a[i] + *b[i];
+      |               ^~~~~
+exercises.c:143:23: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  143 |       *c[i] = *a[i] + *b[i];
+      |                       ^~~~~
+Compilation failed
+e2d309b
