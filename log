@@ -965,3 +965,17 @@ exercises.c:158:12: error: variable ‘a’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 b8c35da
+Sun 19 Mar 2023 02:37:07 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:159:12: error: variable ‘b’ set but not used [-Werror=unused-but-set-variable]
+  159 |   Vector * b;
+      |            ^
+exercises.c:158:12: error: variable ‘a’ set but not used [-Werror=unused-but-set-variable]
+  158 |   Vector * a;
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+a8e592f
