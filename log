@@ -758,3 +758,15 @@ exercises.c:140:5: error: ‘i’ undeclared (first use in this function)
 exercises.c:140:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 e33f336
+Sun 19 Mar 2023 01:43:08 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:141:15: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  141 |   c[i] = a[i] + b[i];
+      |          ~~~~ ^ ~~~~
+      |           |      |
+      |           Vector Vector
+Compilation failed
+c11543d
