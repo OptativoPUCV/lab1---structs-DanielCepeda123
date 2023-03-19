@@ -161,7 +161,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
   a = crearVector(2);
   b = crearVector(2);
 
-  c = crearVector(2);
+  //c = crearVector(2);
 
   asignarValor(a, 0, a1);
   asignarValor(a, 1, a2);
