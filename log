@@ -857,3 +857,17 @@ Sun 19 Mar 2023 02:16:59 AM UTC:
  tests:  6|2
 total_score: 50/70
 ce823d6
+Sun 19 Mar 2023 02:23:07 AM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:159:11: error: unused variable ‘b’ [-Werror=unused-variable]
+  159 |    Vector b;
+      |           ^
+exercises.c:158:11: error: unused variable ‘a’ [-Werror=unused-variable]
+  158 |    Vector a;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+fee7118
