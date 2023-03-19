@@ -829,3 +829,19 @@ exercises.c:144:19: error: invalid operands to binary + (have ‘Vector’ and �
       |               Vector Vector
 Compilation failed
 78391a2
+Sun 19 Mar 2023 01:51:04 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:144:11: error: invalid type argument of ‘->’ (have ‘Vector’)
+  144 |       c[i]->datos = a[i]->datos + b[i]->datos;
+      |           ^~
+exercises.c:144:25: error: invalid type argument of ‘->’ (have ‘Vector’)
+  144 |       c[i]->datos = a[i]->datos + b[i]->datos;
+      |                         ^~
+exercises.c:144:39: error: invalid type argument of ‘->’ (have ‘Vector’)
+  144 |       c[i]->datos = a[i]->datos + b[i]->datos;
+      |                                       ^~
+Compilation failed
+0059dd4
