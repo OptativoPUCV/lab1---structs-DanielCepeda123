@@ -790,3 +790,14 @@ exercises.c:141:22: error: invalid type argument of unary ‘*’ (have ‘int�
       |                      ^~~~~~~~~~~~~
 Compilation failed
 09b5c52
+Sun 19 Mar 2023 01:49:16 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:141:9: error: ‘i’ undeclared (first use in this function)
+  141 |   for ( i = 0 ; i <= a->capacidad ; i++)
+      |         ^
+exercises.c:141:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c7f3dc0
