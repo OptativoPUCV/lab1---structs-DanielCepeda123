@@ -1065,3 +1065,29 @@ Thu 23 Mar 2023 03:49:14 PM UTC:
  tests:  8|0
 total_score: 70/70
 888324d
+Thu 23 Mar 2023 03:51:54 PM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:36:7: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   36 |   max = a[i];
+      |       ^
+exercises.c:37:7: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   37 |   min = a[i];
+      |       ^
+exercises.c:41:16: error: comparison between pointer and integer [-Werror]
+   41 |       if ( max <= a[i] )
+      |                ^~
+exercises.c:43:13: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   43 |         max = a[i];
+      |             ^
+exercises.c:46:16: error: comparison between pointer and integer [-Werror]
+   46 |       if ( min >= a[i] )
+      |                ^~
+exercises.c:48:13: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   48 |         min = a[i];
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+9af2dbd
